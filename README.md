@@ -36,14 +36,13 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://rating-lukegoes.vercel.app/)
 
 ## My process
 
 ### Built with
 
-- [TailwindCSS] (https://tailwindcss.com/)
+- [TailwindCSS](https://tailwindcss.com/)
 - [Framer-motion](https://motion.dev/)
 - [Vite](https://vite.dev/)
 - [React](https://reactjs.org/) - JS library
@@ -71,4 +70,4 @@ const proudOfThisFunc = () => {
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@lukegoes](https://www.frontendmentor.io/profile/lukegoes)
