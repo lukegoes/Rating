@@ -26,17 +26,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+![](/screenshot.JPG)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://rating-lukegoes.vercel.app/)
+- Repository: [https://github.com/lukegoes/Rating](https://github.com/lukegoes/Rating)
+- Solution URL: [https://rating-lukegoes.vercel.app/](https://rating-lukegoes.vercel.app/)
 
 ## My process
 
@@ -45,28 +40,28 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - [TailwindCSS](https://tailwindcss.com/)
 - [Framer-motion](https://motion.dev/)
 - [Vite](https://vite.dev/)
-- [React](https://reactjs.org/) - JS library
+- [React](https://reactjs.org/)
 
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+During this project, I gained valuable experience and improved several skills related to React, TailwindCSS, and animations:
 
-To see how you can add code snippets, see below:
+State management with React useState
+I learned how to handle user interactions by managing state for selected ratings and submission status.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+const [selected, setSelected] = useState(null);
+const [submitted, setSubmitted] = useState(false);
 ```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+
+Conditional rendering in React
+I implemented conditional rendering to switch between the rating form and the thank-you screen without changing routes, providing a smooth user experience.
+
+```html
+{submitted ? <Form /> : <ThankYou />}
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+
 
 ## Author
 
