@@ -1,68 +1,70 @@
-# Frontend Mentor - Interactive rating component solution
+# Frontend Mentor - Solução do Componente de Avaliação Interativa
 
-This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+Esta é a minha solução para o [desafio de componente de avaliação interativa do Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI).<br>
+ Os desafios do Frontend Mentor são ótimos para praticar habilidades de programação com projetos reais.
 
-## Table of contents
+## 📑 Índice
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+- [Visão geral](#visão-geral)
+  - [O desafio](#o-desafio)
+  - [Captura de tela](#captura-de-tela)
   - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-- [Author](#author)
+- [Meu processo](#meu-processo)
+  - [Tecnologias utilizadas](#tecnologias-utilizadas)
+  - [O que aprendi](#o-que-aprendi)
+- [Autor](#autor)
 
-## Overview
+## Visão geral
 
-### The challenge
+### O desafio
 
-Users should be able to:
+Os usuários devem ser capazes de:
 
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Select and submit a number rating
-- See the "Thank you" card state after submitting a rating
+- Visualizar o layout ideal do componente, adaptado ao tamanho da tela do dispositivo.
+- Ver os efeitos de hover em todos os elementos interativos da página.
+- Selecionar e enviar uma nota de avaliação.
+- Visualizar o cartão de “Obrigado” após enviar a nota.
 
-### Screenshot
+### Captura de tela
 
-![](/screenshot.JPG)
+![Captura de tela do projeto](/screenshot.JPG)
 
 ### Links
 
-- Repository: [https://github.com/lukegoes/Rating](https://github.com/lukegoes/Rating)
-- Solution URL: [https://rating-lukegoes.vercel.app/](https://rating-lukegoes.vercel.app/)
+- **Repositório:** [https://github.com/lukegoes/Rating](https://github.com/lukegoes/Rating)
+- **Versão online:** [https://rating-lukegoes.vercel.app/](https://rating-lukegoes.vercel.app/)
 
-## My process
+## Meu processo
 
-### Built with
+### Tecnologias utilizadas
 
 - [TailwindCSS](https://tailwindcss.com/)
-- [Framer-motion](https://motion.dev/)
+- [Framer Motion](https://motion.dev/)
 - [Vite](https://vite.dev/)
 - [React](https://reactjs.org/)
 
+### O que aprendi
 
-### What I learned
+Neste projeto, aprofundei meus conhecimentos em React, TailwindCSS e animações com Framer Motion.
 
-During this project, I gained valuable experience and improved several skills related to React, TailwindCSS, and animations:
+**Gerenciamento de estado com React `useState`**
 
-State management with React useState
-I learned how to handle user interactions by managing state for selected ratings and submission status.
+Pratiquei o controle de interações do usuário gerenciando o estado da nota selecionada e o status de envio:
 
-```html
+```javascript
 const [selected, setSelected] = useState(null);
 const [submitted, setSubmitted] = useState(false);
 ```
 
-Conditional rendering in React
-I implemented conditional rendering to switch between the rating form and the thank-you screen without changing routes, providing a smooth user experience.
+**Renderização condicional no React**
 
-```html
-{submitted ? <Form /> : <ThankYou />}
+Implementei renderização condicional para alternar entre o formulário de avaliação e a tela de agradecimento, mantendo tudo na mesma página para uma experiência fluida:
+
+```javascript
+{submitted ? <ThankYou /> : <Form />}
 ```
 
 
-## Author
+## Autor
 
 - Frontend Mentor - [@lukegoes](https://www.frontendmentor.io/profile/lukegoes)
